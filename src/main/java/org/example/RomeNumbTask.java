@@ -7,7 +7,7 @@ import static java.lang.System.in;
 
 public class RomeNumbTask {
     public static void main(String[] args) {
-        System.out.println("Введіть 2 римських числа:");
+        System.out.println("Введіть 2 римських числа :");
         Scanner scanner = new Scanner(System.in);
         System.out.println(new RomeNumbTask().calculate(scanner.nextLine()));
     }
@@ -44,7 +44,7 @@ public class RomeNumbTask {
 
     public static String arabicToRome(int number) {
         if ((number <= 0) || (number > 4000)) {
-            throw new IllegalArgumentException(number + " is not in range (0,4000]");
+            throw new IllegalArgumentException(number + " is not on range (0,4000]");
         }
 
         List<RomanNumeral> romanNumerals = RomanNumeral.getReverseSortedValues();
